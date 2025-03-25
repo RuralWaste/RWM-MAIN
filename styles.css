@@ -507,8 +507,8 @@ body.disable-scroll {
 }
 
 .main-contact h1 {
+    width: 100%;
     padding: 2px;
-    /* background-color: black; */
     font-optical-sizing: auto;
     display: inline;
     color: #000;
@@ -690,6 +690,12 @@ body.disable-scroll {
     }
 }
 
+@media screen and (max-width: 1680px) {
+    .main-contact .text h1 {
+        font-size: 4.25rem;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .main-contact .text h1 {
         font-size: 3rem;
@@ -831,14 +837,14 @@ body.disable-scroll {
 }
 
 .price-wrapper .price-tier {
-    margin: 20px 40px 10px 40px;
+    margin: 20px 40px -5px 40px;
     font-size: 1.7rem;
     font-weight: 600;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    p {
+    p:nth-child(1) {
         font-size: 1.2rem;
     }
 }
@@ -849,11 +855,10 @@ body.disable-scroll {
 
 .popular {
     width: fit-content;
-    height: 40px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 500;
     color: #fff;
     border-radius: 20px;
@@ -861,14 +866,14 @@ body.disable-scroll {
 }
 
 .price-wrapper .price-detail {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 500;
     margin-left: 40px;
 }
 
 .price-wrapper .pricing {
     position: absolute;
-    margin: 0 0 10px 40px;
+    margin: 10px 0 20px 40px;
     width: fit-content;
     display: flex;
     font-size: 2.75rem;

@@ -123,7 +123,7 @@ body.disable-scroll {
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
+    justify-content:right;
 }
 
 .navbar-menu .menu-item ul, .navbar-menu-mobile .menu-item ul {
